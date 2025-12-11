@@ -82,7 +82,7 @@ class StudyDataset(AbstractVersionedDataset[optuna.Study, optuna.Study]):
         database: str,
         study_name: str,
         load_args: dict[str, Any] | None = None,
-        version: Version = None,
+        version: Version | None = None,
         credentials: dict[str, Any] | None = None,
         metadata: dict[str, Any] | None = None,
     ) -> None:
